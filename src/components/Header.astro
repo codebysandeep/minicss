@@ -1,5 +1,4 @@
 ---
-   import type { world, test } from './common';
 ---
 
 <header>
@@ -8,13 +7,19 @@
   </button>
 
   <!-- Test function -->
-  <button onclick="test(check console)">
+  <button onclick="{test()}">
     test function
   </button>
 
 </header>
 
 
-<!-- <script>
-    import './common.js';
-</script> -->
+<script is:inline>
+    function world() {
+      console.log("welcome to the world");
+    }
+
+    function test() {
+      console.log(`Test message is..`);
+    }
+</script>
