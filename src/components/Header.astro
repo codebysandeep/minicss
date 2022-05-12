@@ -1,11 +1,20 @@
 ---
-const test = () => {
-  console.log("test");
-}
+   import type { world, test } from './common';
 ---
 
 <header>
-  <button onclick="test()">
-    Test
+  <button onclick="world()">
+    World function
   </button>
+
+  <!-- Test function -->
+  <button onclick="test(check console)">
+    test function
+  </button>
+
 </header>
+
+
+<!-- <script>
+    import './common.js';
+</script> -->
